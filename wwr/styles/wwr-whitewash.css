@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+:root {
+    --primary-color: #011936   ;
+  --secondary-color: #465362 ;
+  --accent1-color: #82A3A1;
+  --accent2-color: #9fc490;
+
+  --heading-font: "Poppins, IM Fell French Canon";
+  --paragraph-font: "Poppins, Lato, Helvetica, sans-serif";
+
+ 
+  --headline-color-on-white: #011936;  
+  --headline-color-on-color: #9fc490; 
+  --paragraph-color-on-white: #011936; 
+  --paragraph-color-on-color: #9fc490; 
+  --paragraph-background-color: #011936  ;
+  --nav-link-color: #011936;
+  --nav-background-color: #D4AC0D;
+  --nav-hover-link-color: #9fc490;
+  --nav-hover-background-color: #011936;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    margin:0%;
+}
+
