@@ -21,15 +21,43 @@
   --nav-hover-link-color: #9fc490;
   --nav-hover-background-color: #011936;
 }
-
+body {
+  font-size: 100%;
+}
 header {
-    height: 100px;
-    width: 100%;
+    height: auto;
+    width: fit-content;
     background-color: var(--nav-background-color);
     color: var(--nav-link-color);
-    text-align: center;
-    padding: 30px;
-    font-size: 20px;
+    font-size: 1.5em;
     margin:0%;
+    align-items: center;
+    text-align: center;
 }
-
+nav {
+  display: block;
+  margin: 0 auto;
+  padding: 1%;
+  align-items: center;
+}
+a {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+}
+.home-grid {
+  margin: 0 auto;
+  width: 100%;
+}
+img.card-img {
+  margin: 0 auto;
+}
+#logo_link {
+  width: 12%;
+  height: auto;
+  margin: 0 auto;
+}
+.logo {
+  max-width: 20%;
+}
