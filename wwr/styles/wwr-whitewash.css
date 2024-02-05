@@ -96,6 +96,7 @@ main section{
 }
 #background {
   height: 725px;
+  background-color: #465362;
 }
 .icon {
   width: 80px;
