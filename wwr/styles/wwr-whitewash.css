@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --primary-color: #011936   ;
@@ -7,7 +7,7 @@
   --accent1-color: #82A3A1;
   --accent2-color: #9fc490;
 
-  --heading-font: "Poppins, IM Fell French Canon";
+  --heading-font: "Poppins, IM Fell French Canon, ariel";
   --paragraph-font: "Poppins, Lato, Helvetica, sans-serif";
 
  
@@ -25,8 +25,18 @@
   max-width: 1600px;
   margin: 0 auto;
 }
+* {
+  font-family: Poppins, 'IM Fell French Canon', arial, Lato, helvetica, sans-serif;
+}
 body {
   background-color: #fcfbfb;
+  font-family: Poppins, Lato, helvetica, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  margin: 0;
 }
 header {
   background-color: var(--nav-background-color);
@@ -39,25 +49,33 @@ nav a {
   text-align: center;
   color: #011936;
   text-decoration: none;
+  padding: 35px;
 }
 h4 {
   color: var(--primary-color);
 }
+main section img {
+  box-sizing: border-box;
+}
+.msg {
+  padding: 35px;
+}
 .home-title {
   color: var(--accent2-color);
+  font-size: 2em;
+  margin-top: 10px;
 }
 .button-box {
   text-align: center;
 }
-.book {
+.book, .join {
   color: #9fc490;
   background-color: #011936;
   text-decoration: none;
-}
-.join {
-  color: #9fc490;
-  background-color: #011936;
-  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 .book:hover {
   color: #011936;
@@ -72,10 +90,20 @@ h4 {
 }
 .msg p {
   color: #011936;
+  font-size: 0.8em;
+  padding-bottom: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+.card-img {
+  border: 10px solid #011936;
 }
 footer {
   color: #011936;
   background-color: #D4AC0D;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 footer a {
   color: #011936;
@@ -98,9 +126,17 @@ main section{
   height: 725px;
   background-color: #465362;
 }
+#logo_link {
+  padding-top: 5px;
+}
 .icon {
   width: 80px;
+  padding-top: 10px;
 }
 .logo {
   width: 80px;
+}
+
+footer .social img {
+  padding-top: 15px;
 }
