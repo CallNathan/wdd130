@@ -140,3 +140,8 @@ main section{
 footer .social img {
   padding-top: 15px;
 }
+
+.social a:hover{
+  text-decoration: none;
+  background-color: #D4AC0D;
+}
