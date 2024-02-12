@@ -129,6 +129,10 @@ main section{
 #logo_link {
   padding-top: 5px;
 }
+#logo_link:hover {
+  background-color: #D4AC0D;
+  color: #D4AC0D;
+}
 .icon {
   width: 80px;
   padding-top: 10px;
