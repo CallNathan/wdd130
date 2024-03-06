@@ -103,7 +103,7 @@
           Gameplay elements <!-- change this -->
         </div>
         <div class="sm-page3">
-          Example Models  <!-- change this -->
+          Production timeline  <!-- change this -->
         </div>
 
         <div class="top">
@@ -125,28 +125,127 @@
       </h2>
       <h3>Home page</h3>
       <p>
-        [Written copy for the home page here]
+        Stellar engines is a game that takes place in space.  It is intended to be a 100 player battle royale type game where players fight eachother not with guns and ammo,
+        but with starships and space weaponry. Specifically it'll take place in low to high earth orbit in the far future where the fight for resources reaches unparralled levels
+        of extreames, and the only places left with resources left to scavange is space debris, each player fights to secure these resources for themselves. 
+        by visiting or traveling to satellites or space debris deposits players can scavange and retrieve materials and old technology modules to upgrade and improve their ship systems.
+      </p>
+      <p>
+        Ships will all be standardized by some unknown entity that all the players are recruited by, with the main inspiration for these standard models being the mining pods from 
+        Guardians Of The Galaxy. (image 1) These pods will be initially spherical and come equipped with a very basic Electron Beam weapon, armor and energy shield system to begin.
+        However potential upgrades could turn your humble little pod into battleships of massive size and scale of devastation. Armor Upgrades to improve your chances of survival
+        Shield upgrades to protect critical systems,  Weapon upgrades to allow you to punch through these armor and shield systems.  The harder these modules are to obtain the stronger
+        they could be.  finding a shield module in a random pile of scrap is going to be weaker then one you find in an abandoned research satellite, which will be weaker then one you 
+        aquire by destroying pirate ships that are strewn around the map.  These pirates will use the same standard as the players but will start the game with preinstalled upgrades.
+        This does mean you need to destroy a ship that might have stronger weapons, shields, and armor then yourself. but the more difficult the fight the higher the rewards could be.
+        and of course the most powerful of upgrades would be located on fully operational battlestations that would be incredably difficult to beat but provide weapons that will shred.
+        all of those inferior systems.
+      </p>
+      <p>
+        Upgrade modules will be categorized by an alpha-numeric system going from F to A and then I and S.  where F is the worst module you can find and A is the best module you can find.
+        I class modules stand for Initial class modules and this category is only for the 3 components you start with. S class Modules stand for Superior class modules these are the kinds
+        of modules you get from killing fully operational battlestations or the very rare pirate ship.  Some modules wont ever have low tier categories, and some can only be a low tier
+        module.  
+      </p>
+      <p>
+        To arms soldiers, and gather your wealth
       </p>
       <p>Images for the Home page</p>
-        <img src="#" alt="image for homepage">
-        <img src="#" alt="image for homepage">
+        <img src="images/mining_pod.webp" alt="mining pod render"> 
+        <!-- https://www.jcruz3d.com/gog-mining-pod -->
+        <img src="images/Stellar_Engines.png" alt="logo" style="width: 200px;">
 
       </ul>
-      <h3>[Page 2]</h3>
+      <h3>Gameplay Elements</h3>
       <p>
-        [Written copy for the Page 2 here]
+        When a player aquires a new module, it takes time to refit the ship with the module, depending on the rarity and type of module it could take a shorter or a longer amount of time to 
+        install. Also while the module is being installed the system it belongs to will be disabled. For example when installing a shield module, your shields will no longer be available. 
+        when installing a weapon module, that weapon slot is no longer active. The only exception is Armor modules, when installing a new armor module you don't have 0 armor your armor 
+        will be reduced by the following equation (AP = NP - (T% * (NP - OP))) Where AP is your new armor points, NP is the armor points the new module provides, T is the time remaining on 
+        the upgrade module. in a percent.  This should reduce the amount of Armor you have while upgrading by an amount that correlates to the amount of time left in the upgrade and the 
+        difference in the armor that the upgrades provide.  This does mean you are most vulnerable at the beginning of the upgrade and slowly get all of your armor back over time.  Fortunatly 
+        you have shields to allow you both time and durability while your armor is upgrading, and you have armor while your shields are being installed.  and each ship has at least 2 weapon 
+        slots so while one is being upgraded you have at least one other to fend off enemies with.
+      </p>
+      <p>
+        When shields are finshed installing they are immediately deployed, as the the time it takes for the shield to activate is included in the install time,  However when a shield is broken 
+        it will wait 5 seconds, then will recharge shields at a rate defined by (SP = SP + 5 + SPB) where SP is shield points, and SPB is a bonus to your shield regeneration provided by your 
+        shield module. 5 shields per second is the default.  this does mean every 5 seconds you will gain a barrier that can absorb an attack as shields can completely negate 100% of an attack 
+        regardless of how much damage it does when the shield hits 0 SP.  Unless the weapon Specifically counters this aspect. Every time your shield is broken there is a 5 second delay before 
+        it is redeployed.
+      </p>
+      <p>
+        When weapons are finsihed installing they are immediately ready to be used, as reload times are included in the initial install timer.  When weapons are used they have unique firing rates, 
+        reload times, weapon types, and damages unique to each weapon.  This does mean for weapons with a long reload time, they also have a longer install time. The table below shows each weapon, 
+        it's class, it's fire rate, Ammo Capacity, reload time, weapon type, and its damages.
+        <table>
+          <tr>
+            <th>Weapon</th>
+            <th>Class</th>
+            <th>Fire Rate</th>
+            <th>Ammo Capacity</th>
+            <th>Reload Time</th>
+            <th>Weapon Type</th>
+            <th>Damages</th>
+          </tr>
+          <tr>
+            <td>Electron Beam</td>
+            <td>I</td>
+            <td>0.2 seconds</td>
+            <td>12</td>
+            <td>1 second</td>
+            <td>Energy</td>
+            <td>
+              <ul>
+                <li>Shields: 10</li>
+                <li>Armor: 15</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        (table would continue for every weapon i would want to add)
       </p>
       <p>Images for the Page 2</p>
-        <img src="#" alt="image for page">
-        <img src="#" alt="image for page">
+        <img src="images/Stellar_Engines.png" alt="logo">
+        <img src="images/mining_pod.webp" alt="image for page">
 
       </ul>
-      <h3>[Page 3]</h3>
+      <h3>Production timeline</h3>
       <p>
-        [Written copy for the Page 3 here]
+        All of the items here are planned to be done by the end of the month unless specified otherwise.
+      </p>
+      <p>
+        March:  Create Default Ship design for player.  Port design over to custom scenerio in unity.
+      </p>
+      <p>
+        April: Apply physics to ship and allow for 3D movement.  If there is time, design an asteriod, space station, or weapon design
+      </p>
+      <p>
+        May: Setup default weaponry to fire.  Create user HP, Armor, and Shield HUD Elements
+      </p>
+      <p>
+        June: make HP, Armor, and Shield Elements take damage on collision based on the sum of the speed of the objects during collision.  Make HP Element disable systems as HP decreases
+      </p>
+      <p>
+        July: add a second ship and give it a basic AI that will fly toward your ship, Stop and maintain a certain distance, and shoot the player.
+      </p>
+      <p>
+        August:  Add a ship destroyed animation,  implement a better AI
+      </p>  
+      <p>
+        September: Finish better AI
+      </p>
+      <p>
+        October: Stress test with 100 ships,  AI aquires nearest target and attacks them.
+      </p>
+      <p>
+        November: Resolve issues that probably arose during stress test.
+      </p>
+      <p>
+        December:  Allow ships to pickup one upgrade of each type,  Armor, Shields, and Weapons.  Create a welding animation while ship is upgrading,  Disable the appropriate system during upgrade.  Cause a Visual change to HUD after Upgrde is finished.
       </p>
       <p>Images for the Page 3</p>
-        <img src="#" alt="image for page3">
+      <img src="images/Stellar_Engines.png" alt="logo">
         <img src="#" alt="image for page3">
 
       </ul>
