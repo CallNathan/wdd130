@@ -17,65 +17,80 @@
         </nav>
     </header>
         <main>
-            <h1>Gameplay Elements</h3>
+            <h1>Gameplay Elements</h1>
             
-            <h2>
+            <h2 id="ShipDeploy">
               Ship Deployment
             </h2>
             <p>
-              When a scap field has been located the SHoT (Scrap Harvesters of Tomorrow) will alert ready soldiers.  who will then load into their warp pods and will be 
+              When a scrap field has been located the SHoT (Scrap Harvesters of Tomorrow) will alert ready soldiers.  who will then load into their warp pods and will be 
               launched into the scrap field. exact drop points are up to the pilots of each pod, but note that each pod only gets 1 warp cell.  which is capable of warping 
               them into the scrap field.  after the warp is completed the Warp module is salvaged by the onboard system to create standardized I class weapons, shields, and armor modules.
             </p>
-            <h2>Hull Points, Armor points and Shield points</h2>
-            <h3>Hull points</h3>
-            <p>
-                Players will have 3 types of health bars, each one has its own unique interactions and penalties attached to them.  The first two are Hull Points (HP)
-                 And Armor points (AP).  These are very similar to eachother with only two major differences.  Hull Points take average damage from weapons. The Hull is 
-                 imbued with energy based circutry and protections as well as standard grade steel plating, however when the hull takes damage certain ship systems start 
-                 failing.  when hull is 50% depleted 50% of your weapon systems will fall offline, below 25% your ship weapons will fail and any combat regeneration you have 
-                 is disabled. below 10% your engine has gone critical, your thruster upgrades will no longer work. and of course at 0% hull your ship can no longer withstand 
-                 the vacumme of space and will explode.  If you manage to emerge victorious or manage to escape your enemy, the hull is equipped with secondary repair systems 
-                 that will slowly repair your hull and any systems that fell offline.
-            </p>
-            <h3>Armor Points</h3>
-            <p>
-                Armor on the other hand, has none of those downsides, you can take as much armor damage as you want without penalties to your ship systems.  However, armor 
-                is 100% metal plating, as such energy based weapons can absolutely shred your armor points.  additionally armor is heavy, depending on how much you equip you 
-                may find that your thrusters will struggle to move your ship.  Even though thrust in space is guarenteed, when you wheigh more it takes longer to get moving.  
-                Additionally Armor points cannot regenerate naturally,  if you want to restore your armor, you'll need to uninstall the module and reinstall it.  Certain 
-                upgrade modules can enable active repairing, but they'll likely be slow and unable to do so while under fire.
-            </p>
-            <h3>
-                Shields
-            </h3>
-            <p>
-                Shields are the most versitile of the three health bars.  able to absorb damage like armor, withstand energy weapons, and regenerate while active it is a must have in space combat.  
-                However Shields are not without their disadvantages, Kinetic or peircing based weapons can break a shield in a moment, peircing especially.  when hit by a piercing 
-                attack the shields energy absorbtion fails, allowing attacks to continue through the shield and hit the armor or hull.  Shields are a must have, but there are 
-                many ways to work around them.  
-            </p>
-            <div><img src="Images/free-power.png" alt="shield icon"></div>
-            <h2>Refit times</h2>
-            <p>
-                When a player aquires a new module, it takes time to refit the ship with the module, depending on the rarity and type of module it could take a shorter or a longer amount of time to 
-                install. Also while the module is being installed the system it belongs to will be disabled. For example when installing a shield module, your shields will no longer be available. 
-                when installing a weapon module, that weapon slot is no longer active. The only exception is Armor modules, when installing a new armor module you don't have 0 armor your armor 
-                will be reduced by the following equation (AP = NP - (T% * (NP - OP))) Where AP is your new armor points, NP is the armor points the new module provides, T is the time remaining on 
-                the upgrade module. in a percent.  This should reduce the amount of Armor you have while upgrading by an amount that correlates to the amount of time left in the upgrade and the 
-                difference in the armor that the upgrades provide.  This does mean you are most vulnerable at the beginning of the upgrade and slowly get all of your armor back over time.  Fortunatly 
-                you have shields to allow you both time and durability while your armor is upgrading, and you have armor while your shields are being installed.  and each ship has at least 2 weapon 
-                slots so while one is being upgraded you have at least one other to fend off enemies with.
-            </p>
-            <h2>Preloaded weaponry</h2>
-            <p>
-                When weapons are finsihed installing they are immediately ready to be used, as reload times are included in the initial install timer.  When weapons are used they have unique firing rates, 
-                reload times, weapon types, and damages unique to each weapon.  This does mean for weapons with a long reload time, they also have a longer install time. The table below shows each weapon, 
-                it's class, it's fire rate, Ammo Capacity, reload time, weapon type, and its damages.
-            </p>
+            <div id="HPAPSP">
+              <h2 id="all3">Hull Points, Armor points and Shield points</h2>
+              <div id="HP">
+                <h3>Hull points</h3>
+                <p>
+                    Players will have 3 types of health bars, each one has its own unique interactions and penalties attached to them.  The first two are Hull Points (HP)
+                     And Armor points (AP).  These are very similar to eachother with only two major differences.  Hull Points take average damage from weapons. The Hull is 
+                     imbued with energy based circutry and protections as well as standard grade steel plating, however when the hull takes damage certain ship systems start 
+                     failing.  when hull is 50% depleted 50% of your weapon systems will fall offline, below 25% your ship weapons will fail and any combat regeneration you have 
+                     is disabled. below 10% your engine has gone critical, your thruster upgrades will no longer work. and of course at 0% hull your ship can no longer withstand 
+                     the vacumme of space and will explode.  If you manage to emerge victorious or manage to escape your enemy, the hull is equipped with secondary repair systems 
+                     that will slowly repair your hull and any systems that fell offline.
+                </p>
+              </div>
+              <div id="hullicon"><img src="Images/Hullpoints.webp" alt="hull icon"></div>
+              <div id="AP">
+                <h3>Armor Points</h3>
+                <p>
+                    Armor on the other hand, has none of those downsides, you can take as much armor damage as you want without penalties to your ship systems.  However, armor 
+                    is 100% metal plating, as such energy based weapons can absolutely shred your armor points.  additionally armor is heavy, depending on how much you equip you 
+                    may find that your thrusters will struggle to move your ship.  Even though thrust in space is guarenteed, when you wheigh more it takes longer to get moving.  
+                    Additionally Armor points cannot regenerate naturally,  if you want to restore your armor, you'll need to uninstall the module and reinstall it.  Certain 
+                    upgrade modules can enable active repairing, but they'll likely be slow and unable to do so while under fire.
+                </p>
+              </div>
+              <div id="armoricon"><img src="Images/ArmorIcon.png" alt="Armor Icon"></div>
+              <div id="SP">
+              <h3>
+                  Shields
+              </h3>
+              <p>
+                  Shields are the most versitile of the three health bars.  able to absorb damage like armor, withstand energy weapons, and regenerate while active it is a must have in space combat.  
+                  However Shields are not without their disadvantages, Kinetic or peircing based weapons can break a shield in a moment, peircing especially.  when hit by a piercing 
+                  attack the shields energy absorbtion fails, allowing attacks to continue through the shield and hit the armor or hull.  Shields are a must have, but there are 
+                  many ways to work around them.  
+              </p>
+              </div>
+              <div id="Shieldicon"><img  src="Images/energy_ball.webp" alt="shield icon"></div>
+            </div>
+            <div id="refitTimes">
+              <h2>Refit times</h2>
+              <p>
+                  When a player aquires a new module, it takes time to refit the ship with the module, depending on the rarity and type of module it could take a shorter or a longer amount of time to 
+                  install. Also while the module is being installed the system it belongs to will be disabled. For example when installing a shield module, your shields will no longer be available. 
+                  when installing a weapon module, that weapon slot is no longer active. The only exception is Armor modules, when installing a new armor module you don't have 0 armor your armor 
+                  will be reduced by the following equation (AP = NP - (T% * (NP - OP))) Where AP is your new armor points, NP is the armor points the new module provides, T is the time remaining on 
+                  the upgrade module. in a percent.  This should reduce the amount of Armor you have while upgrading by an amount that correlates to the amount of time left in the upgrade and the 
+                  difference in the armor that the upgrades provide.  This does mean you are most vulnerable at the beginning of the upgrade and slowly get all of your armor back over time.  Fortunatly 
+                  you have shields to allow you both time and durability while your armor is upgrading, and you have armor while your shields are being installed.  and each ship has at least 2 weapon 
+                  slots so while one is being upgraded you have at least one other to fend off enemies with.
+              </p>
+            </div>
+            <div id="Preload">
+              <h2>Preloaded weaponry</h2>
+              <p>
+                  When weapons are finsihed installing they are immediately ready to be used, as reload times are included in the initial install timer.  When weapons are used they have unique firing rates, 
+                  reload times, weapon types, and damages unique to each weapon.  This does mean for weapons with a long reload time, they also have a longer install time. The table below shows each weapon, 
+                  it's class, it's fire rate, Ammo Capacity, reload time, weapon type, and its damages.
+              </p>
+            </div>
+            <div class="weaponsTable">
               <h3>weapon table</h3>
                 <div>
-                <table>
+                <table class="weaponsTable">
                   <tr>
                     <th>Weapon</th>
                     <th>Class</th>
@@ -85,14 +100,14 @@
                     <th>Weapon Type</th>
                     <th>Damages</th>
                   </tr>
-                  <tr>
-                    <td>Electron Beam</td>
-                    <td>I</td>
-                    <td>0.2 seconds</td>
-                    <td>12</td>
-                    <td>1 second</td>
-                    <td>Energy</td>
-                    <td>
+                  <tr class="IclassModules">
+                    <td class="IclassModules">Electron Beam</td>
+                    <td class="IclassModules">I</td>
+                    <td class="IclassModules">0.2 seconds</td>
+                    <td class="IclassModules">12</td>
+                    <td class="IclassModules">1 second</td>
+                    <td class="IclassModules">Energy</td>
+                    <td class="IclassModules">
                       <ul class="tableList">
                         <li class="tableList">vs Shields: 10</li>
                         <li class="tableList">vs Armor: 15</li>
@@ -102,6 +117,7 @@
                   </tr>
                 </table>
                 </div>
+            </div>
         </main>
         <footer>
           <div id="FS1">
@@ -112,7 +128,7 @@
                   <li><a href="https://store.steampowered.com/">Steam page. Since Game is not published, this link will send you to the steam store instead.</a></li>
               </ul>
           </div>
-          <div class="notes">
+          <div id="note" class="notes">
               <h3 class="notes">Notes</h3>
               <p class="notes">
                   As of right now these pages are primarily a placeholder, should the development team actually start working on the game these pages will be updated and changed as data 
