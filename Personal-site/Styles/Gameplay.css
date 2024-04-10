@@ -92,6 +92,7 @@ h2 {
     grid-template-rows: 50px auto;
     border-style: solid;
     border-width: 5px;
+    margin: 15px;
 }
 #all3 { 
     grid-column: 1/4;
@@ -206,8 +207,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #aaa;
-    border: 2px solid black;
-    border-collapse: collapse;
  }
  footer ul, li, a {
     background-color: #aaa;
