@@ -1,0 +1,29 @@
+.box {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border: 1px solid black; /* Add a border to the box */
+  }
+  
+  .box::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 75%;
+    height: 50%; /* Set height to 100% to ensure it spans the entire height of the box */
+    width: 1px; /* Adjust the thickness of the border line as needed */
+    background-color: black; /* Adjust color as needed */
+    transform: translateY(-50%); /* Shift the border line up by 50% of its own height to center it vertically */
+  }
+  .box::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    right: 0;
+    top: 50%;
+    width: 100%; /* Set height to 100% to ensure it spans the entire height of the box */
+    height: 1px; /* Adjust the thickness of the border line as needed */
+    background-color: black; /* Adjust color as needed */
+    transform: translateY(-50%); /* Shift the border line up by 50% of its own height to center it vertically */
+  }

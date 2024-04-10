@@ -76,15 +76,24 @@ a:hover {
 #ProductionTimeline {
     display: grid;
     grid-template-columns: 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px;
-    grid-template-rows: auto 320px 320px 320px auto;
+    grid-template-rows:320px 320px 320px;
     overflow: auto;
 }
-
+#timelineLines {
+    grid-row: 1/4;
+    grid-column: 1/-1;
+    background-color: transparent;
+    transform: translateX(-125px);
+}
+#timelineLines img{
+    background-color: transparent;
+}
 #March, #April, #May, #June, #July, #August, #September, #October, #November, #December {
     border: 15px solid #666;
     border-radius: 25%;
     padding: 25px;
     background-color: rgba(0,0,0,.5);
+    z-index: 1;
 }
 main{
     justify-content: center;
@@ -142,7 +151,6 @@ main h3 {
     grid-column: 10/11;
 }
 #MainNote {
-    grid-column: 1/-1;
     margin: 15px;
 }
 
